@@ -1,0 +1,11 @@
+.ProfilePost {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+  
+    &__delete {
+      height: 100%;
+      padding: 5px;
+    }
+  }

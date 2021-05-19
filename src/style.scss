@@ -1,1 +1,29 @@
 @import './reset.scss';
+
+@import './reset.scss';
+@import './variables.scss';
+
+.App {
+    padding: 25px;
+    font-family: 'Tajawal', sans-serif;
+  }
+
+a {
+  text-decoration: none;
+  color: rgb(21, 31, 35);
+  outline-style: none;
+  font-weight: bold;
+}
+a:hover {
+    color: var(--color-primary);
+}
+
+.TODO {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: yellowgreen;
+}
+
+button {
+  border-radius: 5px;
+}

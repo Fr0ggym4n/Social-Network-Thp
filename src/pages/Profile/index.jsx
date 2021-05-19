@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { GET_USER_POSTS, OWN_PROFILE } from 'api/apiHandler';
 import { useSelector } from 'react-redux';
 import { getAuthenticationCookie } from 'utils/cookieUtils';

@@ -73,7 +73,7 @@ const OtherProfile = () => {
   useEffect(() => {
     fetchUserData();
     fetchUserPosts();
-  }, []);
+  }, );
 
   return (
     <div className="OtherProfile">

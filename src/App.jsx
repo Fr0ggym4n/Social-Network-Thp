@@ -41,7 +41,7 @@ const App = () => {
 
   useEffect(() => {
     if (checkAuthentication()) fetchCurrentUserFromCookie();
-  }, []);
+  }, );
 
   return (
     <div className="App">

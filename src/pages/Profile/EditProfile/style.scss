@@ -1,0 +1,45 @@
+.EditProfile {
+    display: flex;
+    flex-direction: column;
+  
+    &__usernameTitle {
+      margin-top: 10px;
+    }
+  
+    &__username {
+      width: 50%;
+      margin: 20px 0;
+    }
+  
+    &__email {
+      margin: 20px 0;
+    }
+  
+    &__description {
+      margin: 20px 0;
+      width: 100%;
+      min-height: 100px;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      border: 1px solid rgba(128, 128, 128, 0.692);
+    }
+  
+    &__button {
+      background-color: #308654;
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      width: 40%;
+      margin: auto;
+      border-radius: 5px;
+  
+      &:hover {
+        background-color: #276842;
+        color: white;
+      }
+    }
+  }

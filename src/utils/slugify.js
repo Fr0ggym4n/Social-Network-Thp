@@ -2,7 +2,7 @@ const slugify = (str) => {
     let slug = str.replace(/^\s+|\s+$/g, '');
     slug = slug.toLowerCase();
 
-    const form = 'àáäâèéëêìíïîòóöôùúüûñç·/_,:;';
+    const from = 'àáäâèéëêìíïîòóöôùúüûñç·/_,:;';
     const to = 'aaaaeeeeiiiioooouuuunc------';
     const fromLength = from.length;
 

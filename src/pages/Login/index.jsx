@@ -52,19 +52,25 @@ const Login = () => {
   };
 
   return (
-    <div className="Login">
-      <h1 className="Login__title">Log in</h1>
-      {loading && (
-        <p>SENDING REQUEST, PLEASE WAIT…</p>
-      )}
-      {error && (
-        <p>{error}</p>
-      )}
-      {currentUser.id && (
-        <Redirect to={{ pathname: '/profile' }} />
-      )}
-      <LoginForm handleLogin={handleLogin} />
-    </div>
+      <div className="Login"> 
+        <div className='form-content-left'>
+        <img className='form-img' src='twitter-bird-1.svg' alt='twitter-bird' />
+          <h1 className="log-in">Log in</h1>
+            {loading && (
+              <p>SENDING REQUEST, PLEASE WAIT…</p>
+            )}
+            {error && (
+              <p>{error}</p>
+            )}
+        </div>
+        <div className='form-content-right'>
+        
+             {currentUser.id && (
+            <Redirect to={{ pathname: '/profile' }} />
+          )}
+          <LoginForm handleLogin={handleLogin} />
+        </div>
+      </div>
   );
 };
 

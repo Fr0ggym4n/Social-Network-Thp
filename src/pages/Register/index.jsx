@@ -57,17 +57,22 @@ const Register = () => {
 
   return (
     <div className="Register">
-      <h1>Sign up</h1>
-      {loading && (
-        <p>SENDING REQUEST, PLEASE WAIT…</p>
-      )}
-      {error && (
-        <p>{error}</p>
-      )}
-      {currentUser.id && (
-        <Redirect to={{ pathname: '/profile' }} />
-      )}
-      <RegisterForm handleRegistration={handleRegistration} />
+      <div className='form-content-left'>
+          <img className='form-img' src='twitter-bird-1.svg' alt='twitter-bird' />
+          <h1 className='sign-up'>Sign up</h1>
+          {loading && (
+            <p>SENDING REQUEST, PLEASE WAIT…</p>
+          )}
+          {error && (
+            <p>{error}</p>
+          )}
+      </div>
+      <div className='form-content-right'>
+        {currentUser.id && (
+          <Redirect to={{ pathname: '/profile' }} />
+        )}
+        <RegisterForm handleRegistration={handleRegistration} />
+      </div>
     </div>
   );
 };

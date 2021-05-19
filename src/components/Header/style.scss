@@ -1,0 +1,50 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    align-items: center;
+    height: 80px;
+    border-bottom: 2px solid var(--color-primary);
+  
+    &__title {
+      font-size: 1.8rem;
+      padding: 20px
+    }
+  
+    &__public {
+      width: 15%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      &__link {
+        padding: 20px;
+      }
+    }
+  
+    &__loggedIn {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      &__logOut {
+        border-radius: 5px;
+      }
+    }
+  }
+  
+  button {
+    background-color: #C70524;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  
+    &:hover {
+      background-color: #A7041F;
+      color: white;
+    }
+  }

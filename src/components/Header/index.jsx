@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <div className="Header">
-      <Link to="/" className="Header__title">M&C Social Network</Link>
+      <Link to="/" className="Header__title">Twitter-Like Network</Link>
       {!username && (
         <div className="Header__public">
           <Link to="/login" className="Header__public__link">Log in</Link>
