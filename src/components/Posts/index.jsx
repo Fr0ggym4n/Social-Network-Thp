@@ -91,6 +91,7 @@ const Posts = () => {
         </p>
       )}
       <h2 className="Posts__title">List of posts {currentUser.username && (`(${postsCount} in total)`)}</h2>
+      <div className="content post-content home-content">
       {posts && (posts.map((post) => (
         <Post
           id={post.user.id}
@@ -103,6 +104,7 @@ const Posts = () => {
           key={post.id}
         />
       )))}
+      </div>
     </div>
   );
 };

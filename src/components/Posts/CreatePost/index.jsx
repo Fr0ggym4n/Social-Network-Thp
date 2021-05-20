@@ -44,13 +44,17 @@ const CreatePost = ({ refreshPosts }) => {
   };
 
   return (
+    <div className="content home-content">
     <form className="CreatePost">
-      <textarea className="CreatePost__input" value={value} onChange={handleChangeValue} placeholder="Write down a post" />
-      <input className="CreatePost__submit" type="submit" value="Post" onClick={handleSubmit} />
-      {loading && (
+      <textarea className="CreatePost__input" value={value} onChange={handleChangeValue} placeholder="Write down a post" />      
+      <button className='form-input-btn home-post' type='submit' onClick={handleSubmit} value="Submit">
+          Post
+          {loading && (
         <p>We are sending your post {currentUser.username}…</p>
       )}
+      </button>
     </form>
+    </div>
   );
 };
 

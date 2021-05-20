@@ -31,7 +31,7 @@ const ProfilePost = (props) => {
     <div className="ProfilePost">
       <div className="ProfilePost__leftBlock">
         <p className="ProfilePost__text">{text}</p>
-        <p><small>{createdAt}</small></p>
+        <p><small>Posted at: {createdAt}</small></p>
       </div>
       <button className="ProfilePost__delete" type="button" onClick={handleDelete}>delete</button>
     </div>

@@ -26,7 +26,9 @@ const Header = () => {
       {username && (
         <div className="Header__loggedIn">
           <Link to="/profile" className="Header__LoggedIn__profile">Profile</Link>
-          <button type="button" className="Header__loggedIn__logOut" onClick={handleLogOut}>Log out, {username}</button>
+          <Link to="/">
+            <button type="button" className="Header__loggedIn__logOut" onClick={handleLogOut}>Log out, {username}</button>
+          </Link>
         </div>
       )}
     </div>

@@ -1,17 +1,28 @@
 .Post {
-    border: 1px solid red;
+    border: 1px solid rgb(39, 176, 255);
     border-radius: 10px;
-    padding: 5px;
+    padding: 5%;
     margin: 10px;
-    width: 50%;
+    width: auto;
   
     &__header {
       display: flex;
       justify-content: space-between;
+      padding: 2%;
     }
   
+    &__text {
+      padding: 2%;
+    }
+
     &__delete {
       padding: 4px;
       border-radius: 5px;
     }
+  }
+  .post-content {
+    display: grid !important;
+    grid-template-columns: max-content !important;
+    height: auto !important;
+    padding: 5%;
   }

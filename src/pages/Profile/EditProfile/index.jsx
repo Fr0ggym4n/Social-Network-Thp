@@ -58,10 +58,11 @@ const EditProfile = (props) => {
   };
 
   return (
+    <div className="content">
     <form className="EditProfile">
       <label className="EditProfile__usernameTitle">Username: </label>
       <input
-        className="EditProfile__username"
+        className="area-edit"
         type="text"
         name="username"
         minLength="3"
@@ -69,11 +70,10 @@ const EditProfile = (props) => {
         onChange={handleChangeUsername}
         required
       />
-      <p className="EditProfile__emailTitle">Email:</p>
-      <p className="EditProfile__email">{email}</p>
+      <p className="EditProfile__email">Email: &emsp; {email}</p>
       <label className="EditProfile__descriptionTitle">Description: </label>
-      <textarea
-        className="EditProfile__description"
+      <textarea 
+        className="EditProfile__description area-edit"
         type="description"
         name="description"
         minLength="20"
@@ -81,8 +81,11 @@ const EditProfile = (props) => {
         onChange={handleChangeDescription}
         required
       />
-      <input className="EditProfile__button" type="submit" onClick={handleSubmit} value="Submit" />
+      <button className='EditProfile__button' type='submit' onClick={handleSubmit} value="Submit">
+          Save change
+      </button>
     </form>
+    </div>
   );
 };
 

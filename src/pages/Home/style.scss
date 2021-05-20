@@ -8,7 +8,22 @@
       text-align: center;
     }
   
+    &__description {
+      padding: 50px;
+      margin-top: 5%;
+      font-weight: 535;
+    }
+
     &__hello {
-      margin: 10px 0;
+      margin: 50px;
+    }
+
+    &__title {
+      color: #27b0ff;
+    }
+
+    &__title:hover{
+      color: #00e8ec;
+      cursor: default;
     }
   }

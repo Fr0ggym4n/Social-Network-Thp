@@ -13,17 +13,18 @@ a {
   color: rgb(21, 31, 35);
   outline-style: none;
   font-weight: bold;
+  font-size: 1.3rem;
 }
 a:hover {
     color: var(--color-primary);
 }
 
-.TODO {
-  font-size: 1.5rem;
-  font-weight: bold;
-  background-color: yellowgreen;
-}
-
 button {
   border-radius: 5px;
+  background: linear-gradient(90deg, #27b0ff 0%, #00e8ec 100%);
+  font-size: 1rem;
+}
+button:hover {
+  background: linear-gradient(90deg, #278fff 0%, #0c63fa 100%);
+  cursor: pointer;
 }

@@ -1,17 +1,18 @@
 .Profile {
-    width: 800px;
-    margin: auto;
-    margin-top: 20px;
-  
-    &__title {
-      text-align: center;
-    }
-  
-    &__separator {
-      margin: 20px 0;
-    }
-  
-    &__postsTitle {
-      text-align: center;
-    }
+  width: 800px;
+  margin: auto;
+  margin-top: 20px;
+
+  &__title {
+    text-align: center;
   }
+
+  &__separator {
+    margin: 20px 0;
+  }
+
+  &__postsTitle {
+    text-align: center;
+    margin: 20px;
+  }
+}

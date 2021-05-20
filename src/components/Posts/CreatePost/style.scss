@@ -1,6 +1,4 @@
 .CreatePost {
-    display: flex;
-    align-items: flex-start;
     margin: 20px 0;
   
     &__title {
@@ -12,23 +10,20 @@
       height: 100px;
       overflow: auto;
       margin-right: 20px;
-      padding: 10px;
-      border-radius: 5px;
-    }
-  
-    &__submit {
-      background-color: #308654;
+      background: linear-gradient(90deg, rgb(251, 251, 251) 0%, rgb(148, 148, 148) 100%);
+      border-radius: 10px;
+      padding: 15px;
       border: none;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-  
-      &:hover {
-        background-color: #276842;
-        color: white;
-      }
-  }
-  
-  }
+      resize: none;
+      outline: none;
+    }
+}
+
+.home-post {
+  border-radius: 20px !important;
+  width: 20% !important;
+}
+.home-content {
+  width: 40% !important;
+  height: 250px !important;
+}
